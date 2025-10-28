@@ -53,18 +53,20 @@ const swiperRef = useRef<SwiperClass | null>(null);
 ]
 
   return (
-    <div className='w-full container mx-auto px-4 md:px-2 xl:px-10 py-10'>
+    <div className='w-full py-10'>
+      <div className='container mx-auto px-4 md:px-2 xl:px-10'>
         <h1 className='text-xl font-medium text-black'>Best of Air Max</h1>
 
         <div className='flex justify-end mt-4 md:mt-2'>
             <SlideNextButton swiperRef={swiperRef} />
         </div>
+      </div>
 
-        <div className="w-full flex justify-center py-4 "> {/* Added wrapper for Swiper */}
+        <div className="w-full flex py-4 container mx-auto pl-4 md:pl-2 xl:pl-10 "> {/* Added wrapper for Swiper */}
           
           <Swiper
-            spaceBetween={10}
-            slidesPerView={1}
+            spaceBetween={5}
+            slidesPerView={3.2}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => { swiperRef.current = swiper; }}
             breakpoints={{
@@ -72,6 +74,7 @@ const swiperRef = useRef<SwiperClass | null>(null);
                     400: { slidesPerView: 1 },
                     600: { slidesPerView: 2 },
                     800: { slidesPerView: 3 },
+                   
                     
                 }}
                
@@ -80,7 +83,7 @@ const swiperRef = useRef<SwiperClass | null>(null);
            {            
             sliderdata.map((card, i)=>(
               <SwiperSlide key={i}>
-                <div className='flex justify-center items-center      
+                <div className='flex items-center      
                                 '>
                   
                   <div className=' flex flex-col
