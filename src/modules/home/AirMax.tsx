@@ -1,19 +1,21 @@
 import React, { useRef } from 'react'
 
-import {airMax1, airMax2, airMax3, aiForce1, airForce2}  from '@/assets/index'
+import {airMax1, airMax2, airMax3}  from '@/assets/index'
 
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Swiper, SwiperSlide} from 'swiper/react';
+import type { Swiper as SwiperClass } from 'swiper';
 
-import { Navigation, Pagination } from 'swiper/modules';
+// import { Navigation, Pagination } from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
+
 // import 'swiper/css/navigation';
 // import 'swiper/css/pagination';
 
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 function AirMax() {
-const swiperRef = useRef(null);
+const swiperRef = useRef<SwiperClass | null>(null);
 
  const sliderdata= [
   {
@@ -38,13 +40,13 @@ const swiperRef = useRef(null);
     "name": "Nike Air Max Pulse",
     "price": "13995",
     "detail": "Men's Shoes",
-    "image": aiForce1
+    "image": airMax1
   },
   {
     "name": "Nike Air Max Pulse",
     "price": "13995",
     "detail": "Men's Shoes",
-    "image": airForce2
+    "image": airMax2
   },
 
 
@@ -78,10 +80,10 @@ const swiperRef = useRef(null);
            {            
             sliderdata.map((card, i)=>(
               <SwiperSlide key={i}>
-                <div className='flex justify-center items-center       
+                <div className='flex justify-center items-center      
                                 '>
                   
-                  <div className=' flex flex-col p-2 
+                  <div className=' flex flex-col
                     transition duration-300 ease-in hover:scale-102  
                        
                   '>
@@ -94,10 +96,7 @@ const swiperRef = useRef(null);
                             <div>
                                  <span className='font-semibold text-gray-800'>{card.price}</span>
                             </div>
-                      </div>
-                        
-                         
-                      
+                      </div>                                          
                       
                   </div>
                 </div>
@@ -116,21 +115,20 @@ const swiperRef = useRef(null);
 export default AirMax
 
 
-const SlideNextButton = ({ swiperRef }) => {
+const SlideNextButton: React.FC<{ swiperRef: React.RefObject<SwiperClass | null> }> = ({ swiperRef }) => {
   return (
     <div className=" flex gap-4 ">
-        <div className='bg-gray-100 border border-gray-200  rounded-full p-2 flex justify-center items-center'>
-            <button onClick={() => swiperRef.current?.slidePrev()} className='text-2xl text-gray-500  '>
-               <ChevronLeft />
-            </button>
-        </div>
+      <div className='bg-gray-100 border border-gray-200  rounded-full p-2 flex justify-center items-center'>
+        <button onClick={() => swiperRef.current?.slidePrev()} className='text-2xl text-gray-500  '>
+          <ChevronLeft />
+        </button>
+      </div>
 
-        <div className='bg-white/60 border border-gray-200 shadow-sm rounded-full p-2 flex justify-center items-center'>
-             <button onClick={() => swiperRef.current?.slideNext()} className='text-2xl text-gray-500 '>
-                <ChevronRight />
-            </button>
-        </div>
-    
+      <div className='bg-white/60 border border-gray-200 shadow-sm rounded-full p-2 flex justify-center items-center'>
+        <button onClick={() => swiperRef.current?.slideNext()} className='text-2xl text-gray-500 '>
+          <ChevronRight />
+        </button>
+      </div>
     </div>
   );
 };

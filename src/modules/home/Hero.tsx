@@ -16,8 +16,8 @@ function Hero() {
                 <p className="text-sm max-w-lg">—designed to push you past your limits and help you go to the max.</p>
     
                 <div className="flex gap-2 justify-center mt-6">
-                  <div className="bg-black text-white px-6 py-2 rounded-full">Notify Me</div>
-                  <div className="bg-black text-white px-6 py-2 rounded-full ">Shop Air Max</div>
+                  <div className="bg-black text-white px-6 py-2 rounded-full hover:cursor-pointer">Notify Me</div>
+                  <div className="bg-black text-white px-6 py-2 rounded-full hover:cursor-pointer">Shop Air Max</div>
                 </div>
               </div>
 
