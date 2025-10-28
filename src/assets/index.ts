@@ -6,5 +6,6 @@ import airMax2 from './air/airMax2.png'
 import airMax3 from './air/airMax3.png'      
 import airForce1 from './air/airForce1.png'  
 import airForce2 from './air/airForce2.png'  
+import featured from './featured/featured.jpg'
 
-export {jordan, nikeLogo, banner1, airMax1, airMax2, airMax3, airForce1, airForce2}
+export {jordan, nikeLogo, banner1, airMax1, airMax2, airMax3, airForce1, airForce2, featured}

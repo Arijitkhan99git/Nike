@@ -8,9 +8,9 @@ function Hero() {
                 <img src={banner1} alt="banner" className="object-cover w-full"/>
               </div>
     
-              <div className="text-black py-10 flex flex-col justify-center items-center">
+              <div className="text-black py-8 lg:py-10 flex flex-col justify-center items-center text-center">
                 <h4 className="text-base font-medium mb-2">First Look</h4>
-                <h1 className="text-6xl font-semibold mb-5">Nike Air Max Pulse</h1>
+                <h1 className="text-5xl lg:text-6xl font-semibold mb-5">Nike Air Max Pulse</h1>
                 
                 <p className="text-sm max-w-lg">Extreme comfort. Hyper durable. Max volume. Introducing the Air Max Pulse</p>
                 <p className="text-sm max-w-lg">—designed to push you past your limits and help you go to the max.</p>

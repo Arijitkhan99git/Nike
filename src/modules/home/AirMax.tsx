@@ -54,10 +54,11 @@ const swiperRef = useRef<SwiperClass | null>(null);
 
   return (
     <div className='w-full py-10'>
-      <div className='container mx-auto px-4 md:px-2 xl:px-10'>
+      <div className='container mx-auto px-4 md:px-2 xl:px-10 flex justify-between items-center'>
         <h1 className='text-xl font-medium text-black'>Best of Air Max</h1>
 
-        <div className='flex justify-end mt-4 md:mt-2'>
+        <div className='hidden sm:flex items-center gap-2 '>
+            <span className='text-gray-800 font-semibold'>Shop</span>
             <SlideNextButton swiperRef={swiperRef} />
         </div>
       </div>
@@ -121,15 +122,15 @@ export default AirMax
 const SlideNextButton: React.FC<{ swiperRef: React.RefObject<SwiperClass | null> }> = ({ swiperRef }) => {
   return (
     <div className=" flex gap-4 ">
-      <div className='bg-gray-100 border border-gray-200  rounded-full p-2 flex justify-center items-center'>
-        <button onClick={() => swiperRef.current?.slidePrev()} className='text-2xl text-gray-500  '>
-          <ChevronLeft />
+      <div className='bg-gray-100   rounded-full p-2 flex justify-center items-center'>
+        <button onClick={() => swiperRef.current?.slidePrev()} >
+          <ChevronLeft strokeWidth={1} className='text-gray-500' size={28}/>
         </button>
       </div>
 
-      <div className='bg-white/60 border border-gray-200 shadow-sm rounded-full p-2 flex justify-center items-center'>
-        <button onClick={() => swiperRef.current?.slideNext()} className='text-2xl text-gray-500 '>
-          <ChevronRight />
+      <div className='bg-gray-200 rounded-full p-2 flex justify-center items-center'>
+        <button onClick={() => swiperRef.current?.slideNext()} >
+          <ChevronRight strokeWidth={1} className='text-black' size={28}/>
         </button>
       </div>
     </div>
