@@ -1,8 +1,6 @@
 import React, { useRef } from 'react'
 
-// import {airMax1, airMax2, airMax3}  from '@/assets/index'
-
-import { nikeLogo } from '@/assets';
+import {airMax1, airMax2, airMax3}  from '@/assets/index'
 
 import { Swiper, SwiperSlide} from 'swiper/react';
 import type { Swiper as SwiperClass } from 'swiper';
@@ -24,31 +22,31 @@ const swiperRef = useRef<SwiperClass | null>(null);
     "name": "Nike Air Max Pulse",
     "price": "13995",
     "detail": "Women's Shoes",
-    "image": nikeLogo
+    "image": airMax1
   },
   {
     "name": "Nike Air Max Pulse",
     "price": "13995",
     "detail": "Men's Shoes",
-    "image": nikeLogo
+    "image": airMax2
   },
   {
     "name": "Nike Air Max 97 SE",
     "price": "13995",
     "detail": "Men's Shoes",
-    "image": nikeLogo
+    "image": airMax3
   },
   {
     "name": "Nike Air Max Pulse",
     "price": "13995",
     "detail": "Men's Shoes",
-    "image": nikeLogo
+    "image": airMax1
   },
   {
     "name": "Nike Air Max Pulse",
     "price": "13995",
     "detail": "Men's Shoes",
-    "image": nikeLogo
+    "image": airMax2
   },
 
 
