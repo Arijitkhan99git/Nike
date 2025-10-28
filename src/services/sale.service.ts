@@ -1,5 +1,5 @@
-import queryParamsFormatter from "@/utils/query-params-formatter";
-import fetchAPI from "./config/fetch-api";
+// import queryParamsFormatter from "@/utils/query-params-formatter";
+// import fetchAPI from "./config/fetch-api";
 
 export const saleService = {
       // Example usage
