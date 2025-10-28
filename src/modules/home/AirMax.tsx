@@ -97,12 +97,12 @@ const swiperRef = useRef<SwiperClass | null>(null);
                 <div className='flex items-center mr-5'>              
                   <div className=' flex flex-col'>
                       <img src={card.image} alt='home' />
-                      <div className='flex justify-between pt-4'>
+                      <div className='flex flex-col lg:flex-row gap-1 justify-between pt-4'>
                             <div className='space-y-1'>
                                 <h1 className='text-lg font-semibold text-gray-800'>{card.name}</h1>
                                 <h2 className='text-base text-gray-500'>{card.detail}</h2>
                             </div>
-                            <div>
+                            <div className='lg:mr-3'>
                                  <span className='font-semibold text-gray-800'>₹ {card.price}</span>
                             </div>
                       </div>                                          
@@ -126,7 +126,7 @@ export default AirMax
 
 const SlideNextButton: React.FC<{ swiperRef: React.RefObject<SwiperClass | null> }> = ({ swiperRef }) => {
   return (
-    <div className=" flex gap-4 ">
+    <div className=" flex gap-3 ">
       <div className='bg-gray-100  rounded-full p-2 flex justify-center items-center border border-white hover:border-blue-500'>
         <button onClick={() => swiperRef.current?.slidePrev()} >
           <ChevronLeft strokeWidth={1} className='text-gray-500' size={28}/>
