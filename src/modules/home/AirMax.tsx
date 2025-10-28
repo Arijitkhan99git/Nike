@@ -98,7 +98,7 @@ const swiperRef = useRef<SwiperClass | null>(null);
                   <div className=' flex flex-col'>
                       <img src={card.image} alt='home' />
                       <div className='flex flex-col lg:flex-row gap-1 justify-between pt-4'>
-                            <div className='space-y-1'>
+                            <div className='md:space-y-1'>
                                 <h1 className='text-lg font-semibold text-gray-800'>{card.name}</h1>
                                 <h2 className='text-base text-gray-500'>{card.detail}</h2>
                             </div>

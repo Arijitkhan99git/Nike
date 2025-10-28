@@ -8,7 +8,7 @@ function Hero() {
                 <img src={banner1} alt="banner" className="object-cover w-full"/>
               </div>
     
-              <div className="text-black py-8 lg:py-10 flex flex-col justify-center items-center text-center">
+              <div className="text-black py-8 lg:py-10 flex flex-col justify-center items-start md:items-center ">
                 <h4 className="text-base font-medium mb-2">First Look</h4>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-5">Nike Air Max Pulse</h1>
                 
