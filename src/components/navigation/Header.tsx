@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import {jordan} from '@/assets/index'
 import {nikeLogo} from  '@/assets/index'
 import { Link } from '@tanstack/react-router'
