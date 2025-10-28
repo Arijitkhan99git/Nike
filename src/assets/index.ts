@@ -1,10 +1,10 @@
 import jordan from './header/jordan.png'
 import nikeLogo from './header/nikeLogo.png'
 import banner1 from './banner/banner1.png'
-import airMax1 from './air/airMax1.png'  // Changed: airmax1 → airMax1
-import airMax2 from './air/airMax2.png'  // Changed: airmax2 → airMax2
-import airMax3 from './air/airMax3.png'  // Changed: airmax3 → airMax3
-import airForce1 from './air/airForce1.png'  // Changed: airforce1 → airForce1
-import airForce2 from './air/airForce2.png'  // Changed: airforce2 → airForce2
+import airMax1 from './Air/AirMax1.png'      // Changed: air → Air
+import airMax2 from './Air/AirMax2.png'      // Changed: air → Air
+import airMax3 from './Air/AirMax3.png'      // Changed: air → Air
+import airForce1 from './Air/AirForce1.png'  // Changed: air → Air
+import airForce2 from './Air/AirForce2.png'  // Changed: air → Air
 
 export {jordan, nikeLogo, banner1, airMax1, airMax2, airMax3, airForce1, airForce2}
