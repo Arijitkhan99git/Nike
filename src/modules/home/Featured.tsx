@@ -9,7 +9,7 @@ function Featured() {
         </div>
         
         <div className="flex flex-col justify-center items-center gap-7">
-            <h1 className="text-5xl font-medium">STEP INTO WHAT FEELS GOOD</h1>
+            <h1 className="text-4xl md:text-5xl font-medium">STEP INTO WHAT FEELS GOOD</h1>
             <p >Cause everyone should know the feeling of running in that perfect pair.</p>
 
             <div className="bg-black text-white px-4 py-2 rounded-full">
