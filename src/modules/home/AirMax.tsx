@@ -66,15 +66,25 @@ const swiperRef = useRef<SwiperClass | null>(null);
         <div className="w-full flex py-4 container mx-auto pl-4 md:pl-2 xl:pl-10 "> {/* Added wrapper for Swiper */}
           
           <Swiper
-            spaceBetween={5}
-            slidesPerView={3.2}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => { swiperRef.current = swiper; }}
+
+            spaceBetween={10}
+            slidesPerView={1.3}
             breakpoints={{
                     
-                    400: { slidesPerView: 1 },
-                    600: { slidesPerView: 2 },
-                    800: { slidesPerView: 3 },
+                     500: {
+                      slidesPerView: 2.2,
+                      spaceBetween: 10
+                    },
+                    600: { 
+                      slidesPerView: 2.4,
+                      spaceBetween: 10 
+                    },
+
+                    1024: { slidesPerView: 3.2,
+                      spaceBetween: 5 
+                     },
                    
                     
                 }}
