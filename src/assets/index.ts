@@ -1,11 +1,10 @@
 import jordan from '@/assets/header/jordan.png'
 import nikeLogo from '@/assets/header/nikeLogo.png'
 import banner1 from '@/assets/banner/banner1.png'
-import banner2 from '@/assets/banner/banner2.png'
 import airMax1 from '@/assets/air/airmax1.png'
 import airMax2 from '@/assets/air/airmax2.png'
 import airMax3 from '@/assets/air/airmax3.png'
 import aiForce1 from '@/assets/air/airForce1.png'
 import airForce2 from '@/assets/air/airForce2.png'
 
-export {jordan, nikeLogo, banner1, banner2, airMax1, airMax2, airMax3, aiForce1, airForce2}
+export {jordan, nikeLogo, banner1, airMax1, airMax2, airMax3, aiForce1, airForce2}
