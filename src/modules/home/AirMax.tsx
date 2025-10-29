@@ -55,7 +55,7 @@ const swiperRef = useRef<SwiperClass | null>(null);
   return (
     <div className='w-full py-10'>
       <div className='container mx-auto px-4 md:px-2 xl:px-10 flex justify-between items-center'>
-        <h1 className='text-xl font-medium text-black'>Best of Air Max</h1>
+        <h1 className='text-2xl font-medium text-black'>Best of Air Max</h1>
 
         <div className='hidden sm:flex items-center gap-2 '>
             <span className='text-gray-800 font-semibold'>Shop</span>
@@ -97,13 +97,13 @@ const swiperRef = useRef<SwiperClass | null>(null);
                 <div className='flex items-center mr-5'>              
                   <div className=' flex flex-col'>
                       <img src={card.image} alt='home' />
-                      <div className='flex flex-col lg:flex-row gap-1 justify-between pt-4'>
-                            <div className='md:space-y-1'>
-                                <h1 className='text-lg font-semibold text-gray-800'>{card.name}</h1>
+                      <div className='flex flex-col lg:flex-row gap-2 justify-between pt-4'>
+                            <div>
+                                <h1 className='text-lg font-semibold text-gray-900'>{card.name}</h1>
                                 <h2 className='text-base text-gray-500'>{card.detail}</h2>
                             </div>
                             <div className='lg:mr-3'>
-                                 <span className='font-semibold text-gray-800'>₹ {card.price}</span>
+                                 <span className='font-semibold text-gray-900'>₹ {card.price}</span>
                             </div>
                       </div>                                          
                       

@@ -3,7 +3,7 @@ import { featured } from "@/assets/index"
 function Featured() {
   return (
     <div className="w-full container mx-auto px-4 md:px-2 xl:px-10 py-8 md:py-10">
-        <h1 className="font-medium text-xl">Featured</h1>
+        <h1 className="font-medium text-2xl">Featured</h1>
         <div className="w-full mt-5 mb-6 md:mb-10">   
             <img src={featured} alt="featured" className="w-full"/>
         </div>
