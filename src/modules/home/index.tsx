@@ -1,4 +1,6 @@
 import AirMax from "./AirMax";
+import Dontmiss from "./Dontmiss";
+import Essentials from "./Essentials";
 import Featured from "./Featured";
 import GearUp from "./GearUp";
 import Hero from "./Hero";
@@ -11,6 +13,8 @@ function HomeModule() {
        <AirMax/>
        <Featured/>
        <GearUp/>
+       <Dontmiss/>
+       <Essentials/>
     </div>
    
   );

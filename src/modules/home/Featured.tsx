@@ -8,7 +8,7 @@ function Featured() {
             <img src={featured} alt="featured" className="w-full"/>
         </div>
         
-        <div className="flex flex-col justify-center items-start md:items-center gap-5 md:gap-7">
+        <div className="flex flex-col justify-center items-start md:items-center gap-4 sm:gap-5 md:gap-6">
             <h1 className="text-4xl md:text-5xl font-medium">STEP INTO WHAT FEELS GOOD</h1>
             <p >Cause everyone should know the feeling of running in that perfect pair.</p>
 

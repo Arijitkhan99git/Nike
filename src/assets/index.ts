@@ -11,11 +11,14 @@ import gearUp1 from '@/assets/gearUp/gearUp1.png'
 import gearUp2 from '@/assets/gearUp/gearUp2.png'
 import gearUp3 from '@/assets/gearUp/gearUp3.png'
 import gearUp4 from '@/assets/gearUp/gearUp4.png'
+import dontMiss from '@/assets/dontMiss/dontMiss.png'
+import essentials1 from '@/assets/Essentials/essentials1.png'
+import essentials2 from '@/assets/Essentials/essentials2.png'
+import essentials3 from '@/assets/Essentials/essentials3.png'
 
 export {jordan, nikeLogo, banner1, airMax1, airMax2, airMax3, airForce1, airForce2, 
     featured,
-    gearUp1,
-    gearUp2,
-    gearUp3,
-    gearUp4
+    gearUp1, gearUp2, gearUp3, gearUp4,
+    dontMiss,
+    essentials1, essentials2, essentials3
 }
