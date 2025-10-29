@@ -12,8 +12,8 @@ function Featured() {
             <h1 className="text-4xl md:text-5xl font-medium">STEP INTO WHAT FEELS GOOD</h1>
             <p >Cause everyone should know the feeling of running in that perfect pair.</p>
 
-            <div className="bg-black text-white px-4 py-2 my-2 rounded-full">
-                <button>Find Your Shoe</button>
+            <div className="bg-black text-white px-4 py-2 my-2 rounded-full hover:cursor-pointer">
+                <button className="hover:cursor-pointer">Find Your Shoe</button>
             </div>
         </div>
     </div>

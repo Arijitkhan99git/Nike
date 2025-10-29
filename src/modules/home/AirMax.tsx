@@ -95,7 +95,7 @@ const swiperRef = useRef<SwiperClass | null>(null);
             sliderdata.map((card, i)=>(
               <SwiperSlide key={i}>
                 <div className='flex items-center mr-5'>              
-                  <div className=' flex flex-col'>
+                  <div className=' flex flex-col hover:cursor-pointer'>
                       <img src={card.image} alt='home' />
                       <div className='flex flex-col lg:flex-row gap-2 justify-between pt-4'>
                             <div>

@@ -114,7 +114,7 @@ function GearUp() {
               {            
               gearForMen.map((card, i)=>(
                 <SwiperSlide key={i}>                             
-                    <div className=' flex flex-col'>
+                    <div className=' flex flex-col hover:cursor-pointer'>
                         <img src={card.image} alt='home' />
                         <div className='flex flex-col 2xl:flex-row gap-2 justify-between pt-4'>
                               <div>
@@ -171,7 +171,7 @@ function GearUp() {
               {            
               gearForWomen.map((card, i)=>(
                 <SwiperSlide key={i}>                        
-                    <div className=' flex flex-col'>
+                    <div className=' flex flex-col hover:cursor-pointer'>
                         <img src={card.image} alt='home' />
                         <div className='flex flex-col 2xl:flex-row gap-2 justify-between pt-4'>
                               <div>

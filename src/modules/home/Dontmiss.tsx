@@ -12,8 +12,8 @@ function Dontmiss() {
                 <h1 className="text-4xl md:text-5xl font-medium">FLIGHT ESSENTIALS</h1>
                 <p>Your built-to-last, all-week wears—but with style only Jordan Brand can deliver.</p>
     
-                <div className="bg-black text-white px-4 py-2 my-2 rounded-full">
-                    <button>Shop</button>
+                <div className="bg-black text-white px-4 py-2 my-2 rounded-full hover:cursor-pointer">
+                    <button className="hover:cursor-pointer">Shop</button>
                 </div>
             </div>
         </div>
