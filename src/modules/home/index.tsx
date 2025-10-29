@@ -4,6 +4,7 @@ import Essentials from "./Essentials";
 import Featured from "./Featured";
 import GearUp from "./GearUp";
 import Hero from "./Hero";
+import SelectedSection from "./SelectedSection";
 
 
 function HomeModule() {
@@ -15,6 +16,7 @@ function HomeModule() {
        <GearUp/>
        <Dontmiss/>
        <Essentials/>
+       <SelectedSection/>
     </div>
    
   );
