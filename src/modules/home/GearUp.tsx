@@ -76,14 +76,14 @@ function GearUp() {
 
   return (
     <div className="w-full container mx-auto px-4 md:px-2 xl:px-10 py-8 md:py-10">
-      <h1 className="font-medium text-2xl">GearUp</h1>
+      <h1 className="font-medium text-2xl pb-4">GearUp</h1>
 
       <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-15 justify-between'>
 
         {/* Men's section */}
         <div >
-          <div className='hidden sm:flex items-center justify-end gap-3 '>
-              <span className='text-gray-800 font-semibold'>Shop Men's</span>
+          <div className='flex items-center sm:justify-end gap-3 '>
+              <span className='text-gray-800 text-base font-medium'>Shop Men's</span>
               <SlideNextButtonMen swiperRef={swiperRefMen} />
           </div>
 
@@ -139,8 +139,8 @@ function GearUp() {
 
         {/* WoMen's section */}
         <div >
-          <div className='hidden sm:flex items-center justify-end gap-3 '>
-              <span className='text-gray-800 font-semibold'>Shop Women's</span>
+          <div className='flex items-center sm:justify-end gap-3 '>
+              <span className='text-gray-800 font-medium text-base'>Shop Women's</span>
               <SlideNextButtonWomen swiperRef={swiperRefWoMen} />
           </div>
 
@@ -206,7 +206,7 @@ export default GearUp
 
 const SlideNextButtonMen: React.FC<{ swiperRef: React.RefObject<SwiperClass | null> }> = ({ swiperRef }) => {
   return (
-    <div className=" flex gap-3 ">
+    <div className="hidden sm:flex  gap-3 ">
       <div className='bg-gray-100  rounded-full p-2 flex justify-center items-center border border-white hover:border-blue-500'>
         <button onClick={() => swiperRef.current?.slidePrev()} >
           <ChevronLeft strokeWidth={1} className='text-gray-500' size={28}/>
@@ -224,7 +224,7 @@ const SlideNextButtonMen: React.FC<{ swiperRef: React.RefObject<SwiperClass | nu
 
 const SlideNextButtonWomen: React.FC<{ swiperRef: React.RefObject<SwiperClass | null> }> = ({ swiperRef }) => {
   return (
-    <div className=" flex gap-3 ">
+    <div className="hidden sm:flex flex gap-3 ">
       <div className='bg-gray-100  rounded-full p-2 flex justify-center items-center border border-white hover:border-blue-500'>
         <button onClick={() => swiperRef.current?.slidePrev()} >
           <ChevronLeft strokeWidth={1} className='text-gray-500' size={28}/>
